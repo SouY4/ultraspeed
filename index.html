@@ -18,7 +18,13 @@
     </div>
   </header>
 
-  <div class="shots" id="shots"></div>
+  <div class="shots">
+    <img src="assets/shot-01.jpg" alt="UltraSpeed の画面 1">
+    <img src="assets/shot-02.jpg" alt="UltraSpeed の画面 2">
+    <img src="assets/shot-03.jpg" alt="UltraSpeed の画面 3">
+    <img src="assets/shot-04.jpg" alt="UltraSpeed の画面 4">
+    <img src="assets/shot-05.jpg" alt="UltraSpeed の画面 5">
+  </div>
 
   <section class="card">
     <h2 style="margin-top:0">できること</h2>
@@ -54,15 +60,5 @@
 
   <footer>© 2026 SHIFTEX, LLC</footer>
 </main>
-<script>
-  // Screenshots are optional; show only the ones that exist.
-  ["01", "02", "03", "04", "05"].forEach(function (n) {
-    var img = new Image();
-    img.alt = "UltraSpeed の画面";
-    img.loading = "lazy";
-    img.onload = function () { document.getElementById("shots").appendChild(img); };
-    img.src = "assets/shot-" + n + ".jpg";
-  });
-</script>
 </body>
 </html>
